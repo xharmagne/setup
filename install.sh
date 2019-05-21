@@ -1,9 +1,13 @@
 #!/bin/bash
 cd ~
+
+# Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 wait
+
 brew install git
 brew cask install iterm2
+brew cask install visual-studio-code
 
 # Node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
