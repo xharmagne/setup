@@ -6,9 +6,7 @@ brew install git
 brew cask install iterm2
 
 # Node
-brew install nvm
-mkdir .nvm
-brew info nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 nvm install node
 
 # Other dev tools
@@ -16,6 +14,8 @@ brew cask install gitkraken
 brew cask install postman
 
 # React Native
+brew install watchman
+npm install -g react-native-cli
 brew update && brew cask install react-native-debugger
 
 # Zsh
